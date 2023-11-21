@@ -20,9 +20,9 @@
 
     <body>
         <header class="header" id="header">
-            <nav class="nav container" id="nav-menu">
+            <nav class="nav container">
                 <a href="#" class="nav__logo">Pramod</a>
-                <div class="nav__menu">
+                <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">
@@ -58,11 +58,13 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a
-                                href="https://drive.google.com/uc?export=download&id=1zprmkyWimoKYZUcyENjN2ZqMpZPNAnGL"
-                                class="nav__link">
-                                <i class="uil uil-message nav__icon"></i>Resume
-                            </a>
+                            <a href="https://drive.google.com/file/d/1zprmkyWimoKYZUcyENjN2ZqMpZPNAnGL/view?usp=sharing"
+                             id="downloadButton"
+                             class="nav__link"       
+                             target="_blank"
+                             onclick="setTimeout(function(){ window.location.href = 'https://drive.google.com/uc?export=download&id=1zprmkyWimoKYZUcyENjN2ZqMpZPNAnGL'; }, 300);">
+                            <i class="uil uil-message nav__icon"></i>Resume
+                        </a>
                         </li>
                     </ul>
                     <i class="uil uil-times nav__close" id="nav-close"></i>
@@ -651,6 +653,12 @@
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">UrbanDrive Wheels</h3>
                                 <p class="portfolio__description">
+                                    <span class="portfolio__description-imp" style="font-size: large; color: #cfbfbf;"
+                                        >Tech-Stack:</span
+                                    >
+                                    JAVA, SQL, JPA, Hibernate
+                                </p>
+                                <p class="portfolio__description">
                                     The UrbanDrive Wheels Car Rental Backend System project is built using Java to provide users in the car rental industry with a streamlined solution for data management and processing. <br />
                                     An individual project completed in 5 days.
                                 </p>
@@ -673,12 +681,7 @@
                                     Sorting Option
 
                                 </p>
-                                <p class="portfolio__description">
-                                    <span class="portfolio__description-imp"
-                                        >Tech-Stack:</span
-                                    >
-                                    JAVA, SQL, JPA, Hibernate
-                                </p>
+                                
                                 <a
                                     href="https://drive.google.com/file/d/1_JTPq9g1r27Pcp7Nv4lHlAXi1xnLPGyr/view?usp=sharing"
                                     target="_blank"
@@ -711,6 +714,12 @@
                                     Service Hub
                                 </h3>
                                 <p class="portfolio__description">
+                                    <span class="portfolio__description-imp" style="font-size: large; color: #cfbfbf;"
+                                        >Tech-Stack:</span
+                                    >
+                                    Core Java, Spring-Boot, MySQL, HTML, CSS, JavaScript
+                                </p>
+                                <p class="portfolio__description">
                                     Streamlining call center operations to maximize "one and done" customer interactions, enhancing efficiency, and boosting customer satisfaction.
                                     <br>
                                     A project created by a team of 3, completed in just 5 days.
@@ -730,12 +739,7 @@
                                     Department Management,
                                     JWT Authentication
                                 </p>
-                                <p class="portfolio__description">
-                                    <span class="portfolio__description-imp"
-                                        >Tech-Stack:</span
-                                    >
-                                    Core Java, Spring-Boot, MySQL, HTML, CSS, JavaScript
-                                </p>
+                                
                                 <a
                                     href="https://lively-sundae-72cddc.netlify.app/"
                                     target="_blank"
@@ -767,6 +771,12 @@
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Travel Manager</h3>
                                 <p class="portfolio__description">
+                                    <span class="portfolio__description-imp" style="font-size: large; color: #cfbfbf;"
+                                        >Tech-Stack:</span
+                                    >
+                                    Core Java
+                                </p>
+                                <p class="portfolio__description">
                                     This Console based backend system is designed to help you explore different travel destinations and book your dream vacation. 
                                     <br>
                                     An individual project completed in 5 days.
@@ -791,12 +801,7 @@
                                     Check wallet balance.
                                     
                                 </p>
-                                <p class="portfolio__description">
-                                    <span class="portfolio__description-imp"
-                                        >Tech-Stack:</span
-                                    >
-                                    Core Java
-                                </p>
+                                
                                 
                                 <a
                                     style="margin: 20px"
@@ -817,6 +822,13 @@
                                 <h3 class="portfolio__title">
                                     wanderlust
                                 </h3>
+                                <p class="portfolio__description-imp">
+                                    <span class="portfolio__description-imp" style="font-size: large; color: #cfbfbf;"
+                                        >Tech-Stack:</span
+                                    >
+                                    HTML, CSS, JavaScript
+
+                                </p>
                                 <p class="portfolio__description">
                                     Our website is designed to help you explore different travel destinations and book your dream vacation. 
                                     <br />
@@ -834,12 +846,7 @@
                                     Directly book vacation packages on the website.
                                     
                                 </p>
-                                <p class="portfolio__description-imp">
-                                    <span class="portfolio__description-imp"
-                                        >Tech-Stack:</span
-                                    >
-                                    HTML, CSS, JavaScript.
-                                </p>
+                               
                                 <a
                                     href="https://wanderlusttouragency.netlify.app/"
                                     target="_blank"
@@ -1008,5 +1015,7 @@
                 loop: true,
             });
         </script>
+
+
     </body>
 </html>
